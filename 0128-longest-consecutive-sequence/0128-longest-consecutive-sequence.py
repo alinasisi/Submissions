@@ -2,7 +2,7 @@ class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         res = 0
         store = set(nums)
-        for i in store:          # ✅ iterate set, not nums
+        for i in store:          
             if i-1 not in store:
                 current = i
                 streak = 0
